@@ -40,7 +40,7 @@ done    '''
     }
     stage('error') {
       steps {
-        sh 'clean.sh'
+        sh './clean.sh'
       }
     }
   }
