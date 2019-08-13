@@ -11,9 +11,9 @@ pipeline {
         echo 'hola mundo'
       }
     }
-    stage('') {
+    stage('clean') {
       steps {
-        bat(script: 'build/clean.cmd', label: 'clean')
+        bat(script: 'build/clean.cmd', label: 'clean', returnStatus: true)
       }
     }
   }
