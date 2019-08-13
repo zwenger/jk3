@@ -38,9 +38,9 @@ x=$(( $x - 1 ))
 done    '''
       }
     }
-    stage('') {
+    stage('error') {
       steps {
-        bat 'clean.cmd'
+        bat 'clean.sh'
       }
     }
   }
