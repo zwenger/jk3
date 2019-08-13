@@ -28,7 +28,7 @@ pipeline {
     }
     stage('notification') {
       steps {
-        slackSend(botUser: true, color: 'warning', message: 'hola')
+        slackSend(botUser: true, message: 'hola')
       }
     }
   }
