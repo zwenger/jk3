@@ -38,5 +38,10 @@ x=$(( $x - 1 ))
 done    '''
       }
     }
+    stage('') {
+      steps {
+        bat 'clean.cmd'
+      }
+    }
   }
 }
