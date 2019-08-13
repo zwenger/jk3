@@ -28,7 +28,7 @@ pipeline {
     }
     stage('notification') {
       steps {
-        slackSend(botUser: true, channel: 'alfred', color: 'green', message: 'asd', baseUrl: 'https://app.slack.com/client/TJRL6EF2B/CJS0R89JA', token: 'nzUct8WUftCkmvjT3wCgcljd', attachments: 'asdasd')
+        slackSend(botUser: true, channel: 'alfred', color: 'green', message: 'asd', baseUrl: 'https://app.slack.com/client/TJRL6EF2B/CJS0R89JA', attachments: 'asdasd', teamDomain: 'alfred-espacio', username: 'jenkins', tokenCredentialId: 'nzUct8WUftCkmvjT3wCgcljd')
       }
     }
   }
