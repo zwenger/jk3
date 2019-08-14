@@ -28,7 +28,7 @@ pipeline {
     }
     stage('notification') {
       steps {
-        slackSend(message: 'hola desde el oficial')
+        slackSend(message: 'el circuito de integracion finalizo con exito')
       }
     }
   }
