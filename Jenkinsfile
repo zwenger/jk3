@@ -1,11 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('mensaje') {
-      steps {
-        echo 'hola mundo'
-      }
-    }
     stage('clean') {
       steps {
         sh './clean.sh'
